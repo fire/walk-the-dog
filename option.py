@@ -96,7 +96,7 @@ class TrainVQOptionParser(BaseOptionParser):
         self.parser.add_argument('--beta', type=float, default=0.25)
         self.parser.add_argument('--n_latent_channel', type=int, default=10)
 
-        self.parser.add_argument('--num_embed_vq', type=int, default=32)
+        self.parser.add_argument('--num_embed_vq', type=int, default=64)
         self.parser.add_argument('--use_vq', type=int, default=1)
         self.parser.add_argument('--lambda_vq', type=float, default=1.)
         self.parser.add_argument('--vq_distance', type=str, default='l2')

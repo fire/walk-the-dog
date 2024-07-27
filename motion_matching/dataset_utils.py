@@ -45,7 +45,8 @@ def prepare_args_and_data(args, create):
 
 def prepare_dataset_only(preset_name, args):
     if preset_name is not None:
-        args.path4manifold = './pre-trained'
+        if args.path4manifold is None:
+            args.path4manifold = './pre-trained'
 
         if preset_name == 'human2dog':
             args.input_idx = 1

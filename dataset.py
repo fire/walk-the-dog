@@ -385,7 +385,7 @@ class SequenceAndManifold(BaseDataset):
         elif self.name.startswith('mocha'):
             return 2
         else:
-            raise Exception("Unknown dataset")
+            return 2
 
     def get_num_states(self):
         return self.get_manifold_feature('index').max() + 1
